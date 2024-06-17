@@ -1,124 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-size: 16px;
-    font-family: Roboto, Arial, sans-serif;  
-  }
-  nav {
-    background-color: steelblue;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-    
-  nav a {
-    display: block;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff; 
-  
-  }
-    
-  /*h1 {
-    margin-left: 20px; 
-    color: steelblue;
-  } */
-  
-  main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem; 
-  }
-    
-  p {
-    padding: 0; 
-    margin-left: 20px; 
-  }
-  
-  main {
-    max-width: 840px;
-  }
-    
-  aside {
-    width: 20rem;
-    margin: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); 
-    padding: 0rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    position: relative; 
-  }
-    
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  aside h2 {
-    position: relative; 
-    top: 3px; 
-    left: 8px; 
-  } 
-  
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-    
-  /* Class Selector */
-  .box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-  }
-  
-  .indent {
-    padding-left: 4rem;
-  }
-  
-  header, footer {
-    max-width: 840px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    margin-left: 20px;
-    color: steelblue;
-    border-bottom: 2px solid steelblue; /* Agregar esta línea */
-  }
-  
-  .grid, header, footer {
-    max-width: 840px;
-    margin: 0 auto;
-  }
-  
-  .grid {
-    display: grid;
-    align-items: center;
-  }
-  
-  main {
-    grid-column: 2/3;
-    margin: 1rem;
-  }
-  
-  aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #3b5998;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-content {
+  width: 70%;
+  padding-right: 2rem;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  color: #3b5998;
+  border-bottom: 2px solid #3b5998;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #3b5998;
+  text-decoration: underline; /* Subrayar enlace al pasar el mouse */
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card h2 {
+  color: #3b5998;
+  border-bottom: 2px solid #3b5998;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.evelin-img, .peru-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #3b5998;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 1rem 1rem 1rem;  /* Ajustar este margen para separar la imagen del texto */
+}
+
+.evelin-img {
+  float: right;
+  margin-left: 1.5rem;  /* Aumentar el margen a la izquierda para más separación */
+}
+
+.peru-img {
+  float: left;
+  margin-right: 1.5rem;  /* Aumentar el margen a la derecha para más separación */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
