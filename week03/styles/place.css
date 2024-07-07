@@ -54,7 +54,7 @@ main {
 
 .hero img {
     width: 100%;
-    height: auto; /* Adjusts the height according to width */
+    height: auto; 
     object-fit: cover;
     object-position: center;
 }
@@ -67,15 +67,15 @@ main {
     box-shadow: var(--box-shadow);
     color: black;
     margin-top: var(--padding);
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    box-sizing: border-box; 
 }
 
 .data {
-    order: 1; /* Display data section first on mobile */
+    order: 1; 
 }
 
 .weather {
-    order: 2; /* Display weather section second on mobile */
+    order: 2; 
 }
 
 h1, h2 {
