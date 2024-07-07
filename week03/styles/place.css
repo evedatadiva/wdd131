@@ -96,7 +96,7 @@ footer {
 
 @media (min-width: 768px) {
     .data, .weather {
-        width: 40%;
+        width: 30%;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -110,12 +110,16 @@ footer {
         right: 5%;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .data {
         width: 20%;
     }
 
     .weather {
         width: 20%;
+    }
+
+    .hero img {
+         width: 100%;
     }
 }
