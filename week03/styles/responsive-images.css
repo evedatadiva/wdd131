@@ -1,0 +1,41 @@
+/* Global settings */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main element styling */
+main {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Hero image responsive styling */
+/* Approach 1: Setting width to 100% and height to auto */
+/* .hero img {
+    width: 100%;
+    height: auto;
+} */
+
+/* Approach 2: Using object-fit with set image containers */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Approach 3: Using aspect-ratio property */
+/* .hero img {
+    width: 100%;
+    aspect-ratio: 2 / 1; 
+    object-fit: cover;
+} */
