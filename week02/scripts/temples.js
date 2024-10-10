@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    
     const lastModifiedParagraph = document.getElementById('lastModified');
     if (lastModifiedParagraph) {
         const lastModified = new Date(document.lastModified);
@@ -19,8 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         lastModifiedParagraph.textContent = `Last modified: ${lastModified.toLocaleDateString('en-US', options)}`;
     }
-
-    
+ 
     const menuButton = document.querySelector('.menu-button');
     const navMenu = document.querySelector('nav ul');
 
