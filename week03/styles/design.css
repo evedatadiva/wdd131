@@ -1,16 +1,16 @@
-/* Fix padding issues on div.callout */
+
 div.callout {
     padding: 20px;
     color: #FFFFFF;
     background-color: #702963;
 }
 
-/* Align h2 to the left */
+
 h2 {
     text-align: left;
 }
 
-/* Layout main element content */
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,14 +21,14 @@ main > h2 {
     grid-column: span 2;
 }
 
-/* Replace marquee with banner */
+
 .banner {
     padding: 10px;
     background-color: #ddd;
     text-align: center;
 }
 
-/* Move footer content to the left */
+
 footer {
     text-align: left;
 }
